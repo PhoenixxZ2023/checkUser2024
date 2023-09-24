@@ -14,11 +14,11 @@ sudo apt install nodejs -y > /dev/null 2>&1
 apt install jq > /dev/null 2>&1
 mkdir $HOME/check_user > /dev/null 2>&1
 cd $HOME/check_user > /dev/null 2>&1
-wget https://raw.githubusercontent.com/BrunoCode69/CheckUser---2024/main/index.js > /dev/null 2>&1
-wget https://raw.githubusercontent.com/BrunoCode69/CheckUser---2024/main/config.json > /dev/null 2>&1
+wget https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/index.js > /dev/null 2>&1
+wget https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/config.json > /dev/null 2>&1
 npm install pm2 --global > /dev/null 2>&1
 cd $HOME
-wget https://raw.githubusercontent.com/BrunoCode69/CheckUser---2024/main/check > /dev/null 2>&1
+wget https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/check > /dev/null 2>&1
 chmod 777 check
 mv check /bin/check > /dev/null 2>&1
 chmod 777 /bin/check > /dev/null 2>&1
