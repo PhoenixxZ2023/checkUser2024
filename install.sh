@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Verificar se o checkuser já está instalado
-if [ -f /usr/bin/proxy ]; then
-    echo "O checkuser já está instalado. Ignorando a instalação."
+if [ -f /usr/bin/check ]; then
+    echo "O check já está instalado. Ignorando a instalação."
 else
 
 vermelho="\033[0;31m"
