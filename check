@@ -16,12 +16,12 @@ menu() {
   status="${vermelho}DESLIGADO${tag}"
   fi
 
-  echo -e "${cyan}CHECKUSER 2024 - @Bruno_VPN${tag}\n"
+  echo -e "${cyan}CHECKUSER 2024 - @TURBONET2023${tag}\n"
   echo -e "${cyan}STATUS CHECKUSER: $status ${tag}\n"
-  echo -e "${branco}[01]${tag} - Iniciar/Parar checkuser"
-  echo -e "${branco}[02]${tag} - Reiniciar checkuser"
-  echo -e "${branco}[03]${tag} - Desistalar checkuser"
-  echo -e "${branco}[00]${tag} - Sair\n"
+  echo -e "${branco}[01]${tag} - INICIAR/PARAR CHECKUSER"
+  echo -e "${branco}[02]${tag} - REINICIAR CHECKUSER"
+  echo -e "${branco}[03]${tag} - DESINSTALAR CHECKUSER"
+  echo -e "${branco}[00]${tag} - SAIR\n"
 
   read -p "Digite uma opção: " response
 
@@ -96,7 +96,7 @@ stop_check_user() {
 
 uninstall_check_user() {
   clear
-  echo -e "${cyan}Deseja apagar o checkuser? (s/n)${tag}: \c"
+  echo -e "${cyan}Deseja remover o checkuser? (s/n)${tag}: \c"
   read response
     
   case $response in
