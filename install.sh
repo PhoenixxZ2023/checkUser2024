@@ -31,4 +31,5 @@ chmod 777 /bin/check > /dev/null 2>&1
 clear
 echo -e "${cyan}CHECKUSER INSTALADO COM SUCESSO.${tag}"
 echo -e "\n${cyan}Comando principal: ${branco}check${tag}.${tag}"
+
 echo -e "\n${cyan}Desenvolvido por: ${branco}@TURBONET2023${tag}.${tag}"
