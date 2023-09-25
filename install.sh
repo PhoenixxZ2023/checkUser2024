@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Verificar se o checkuser já está instalado
-if [ -f /usr/bin/check ]; then
-    echo "O check já está instalado. Ignorando a instalação."
-else
+check_installed() {
+    if [ -f "/usr/lib/check/check.py" ]; then
+        return 0  # Já instalado
+    else
+        return 1  # Não instalado
+    fi
+}
 
 vermelho="\033[0;31m"
 verde="\033[0;32m"
@@ -31,5 +34,4 @@ chmod 777 /bin/check > /dev/null 2>&1
 clear
 echo -e "${cyan}CHECKUSER INSTALADO COM SUCESSO.${tag}"
 echo -e "\n${cyan}Comando principal: ${branco}check${tag}.${tag}"
-
 echo -e "\n${cyan}Desenvolvido por: ${branco}@TURBONET2023${tag}.${tag}"
