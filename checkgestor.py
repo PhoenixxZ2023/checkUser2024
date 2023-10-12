@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 def run_command(username: str, action: int) -> t.Optional[str]:
     try:
-        command = f'check {username} {action}'
+        command = f'checkgestor %s {action}' % username
         result = os.popen(command).readlines()
         final = result[0].strip()
         return final
