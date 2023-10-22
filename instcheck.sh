@@ -1,4 +1,13 @@
 #!/bin/bash
+
+check_installed() {
+    if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
+        return 0  # Já instalado
+    else
+        return 1  # Não instalado
+    fi
+}
+
 clear
 fun_bar() {
 comando[0]="$1"
