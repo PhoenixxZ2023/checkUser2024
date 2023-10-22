@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Verifica se o arquivo "/usr/lib/chuser/atx.py" existe
 check_installed() {
     if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
         return 0  # Já instalado
@@ -6,6 +8,7 @@ check_installed() {
         return 1  # Não instalado
     fi
 }
+
 clear
 fun_bar() {
 comando[0]="$1"
