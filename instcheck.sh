@@ -1,12 +1,4 @@
 #!/bin/bash
-
-check_installed() {
-    if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
-        return 0  # Já instalado
-    else
-        return 1  # Não instalado
-    fi
-}
 clear
 fun_bar() {
 comando[0]="$1"
@@ -46,7 +38,7 @@ chmod 777 /bin/chall > /dev/null 2>&1
 chmod 777 /bin/checkgestor > /dev/null 2>&1
 chmod 777 /usr/lib/checkgestor/checkgestor.py > /dev/null 2>&1
 mkdir /etc/licencec > /dev/null 2>&1
-echo -e 'By: @nandoslayer' > /etc/licencec/telegram
+echo -e 'By: @TURBONET2023' > /etc/licencec/telegram
 sleep 2
 }
 install() {
