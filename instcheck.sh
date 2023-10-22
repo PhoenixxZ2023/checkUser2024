@@ -1,20 +1,13 @@
 #!/bin/bash
+# Verifica se o arquivo "/usr/lib/chckgestor/checkgestor.py" existe
+check_installed() {
+    if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
+        return 0  # Já instalado
+    else
+        return 1  # Não instalado
+    fi
+}
 
-# Verificar se o checkuser já está instalado
-if [ -f /usr/bin/checkgestor/checkgestor.py ]; then
-    echo "O proxy já está instalado. Ignorando a instalação."
-else
-# Função para instalar o checkuser
-    check_installed() {
-        echo "Instalando o checkuser..."
-        {
-            rm -f /usr/bin/chall
-            curl -s -L -o /usr/bin/chall https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/chall
-            chmod +x /usr/bin/chall
-        } > /dev/null 2>&1
-        echo "CheckUser instalado com sucesso."
-    }
-    
 clear
 fun_bar() {
 comando[0]="$1"
@@ -80,5 +73,13 @@ echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mchall\033[0m"
 echo ""
 echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@TURBONET2023\033[0m"
+echo ""
+echo -ne "\n\033[1;32mDE UM ENTER PARA \033[1;33mCONTINUAR...\033[1;37m: "; read -r
 cat /dev/null > ~/.bash_history && history -c
-exit
+rm /root/instcheck* > /dev/null 2>&1
+rm /root/wget-log* > /dev/null 2>&1
+}
+cat /dev/null > ~/.bash_history && history -c
+rm /root/instcheck* > /dev/null 2>&1
+rm /root/wget-log* > /dev/null 2>&1
+install
