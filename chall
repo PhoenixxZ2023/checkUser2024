@@ -50,7 +50,7 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
     echo ""
     [[ $(netstat -nplt | grep -wc 'python3') != '0' ]] && {
 			sks='\033[1;32mON'
-			echo -e "\033[1;33mLink DTUNNEL & CONECTA4G http://$IP\033[1;37m:\033[1;32m$(netstat -nplt | grep 'python3' | awk {'print $4'} | cut -d: -f2 | xargs)/checkUser"
+			echo -e "\033[1;33mLink DTUNELL & CONECTA4G http://$IP\033[1;37m:\033[1;32m$(netstat -nplt | grep 'python3' | awk {'print $4'} | cut -d: -f2 | xargs)/checkUser"
 			echo ""
 			echo -e "\033[1;33mLink GLTUNNEL MOD http://$IP\033[1;37m:\033[1;32m$(netstat -nplt | grep 'python3' | awk {'print $4'} | cut -d: -f2 | xargs)/gl"
 			echo ""
