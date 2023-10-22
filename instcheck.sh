@@ -1,5 +1,4 @@
 #!/bin/bash
-# Verifica se o arquivo "/usr/lib/checkgestor/checkgestor.py" existe
 check_installed() {
     if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
         return 0  # Já instalado
