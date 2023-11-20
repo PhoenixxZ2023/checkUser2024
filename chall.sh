@@ -164,7 +164,7 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
 echo -ne "\033[1;33mCONTINUAR? [S/n]: \033[1;33m?:\033[1;37m "
 read opcion2
 [[ "$opcion2" != @(s|S) ]] && stop_install2
-bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh) && chall
+bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh)
 exit 0
 elif [[ "$resposta" = '0' ]]; then
 echo ""
