@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Verificar se o proxy já está instalado
 if [ -f /usr/lib/chall/chall.sh ]; then
     echo "O chall já está instalado. Ignorando a instalação."
