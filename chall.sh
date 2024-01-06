@@ -1,8 +1,4 @@
 #!/bin/bash
-# Verificar se o proxy já está instalado
-if [ -f /usr/lib/chall/chall.sh ]; then
-    echo "O chall já está instalado. Ignorando a instalação."
-else
 [[ $(awk -F" " '{print $2}' /etc/licencec/telegram) == "@nandoslayer" ]] && {
 IP=$(wget -qO- ipv4.icanhazip.com)
 verif_ptrs() {
